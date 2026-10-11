@@ -1,0 +1,61 @@
+@media screen and ( max-width : 1200px) {
+    #Hero p {
+        font-size: 1rem;
+    }
+    #Hero h1 {
+        font-size: 2rem;
+    }
+    #Hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and ( max-width : 768px ) {
+    #Hero img {
+        width: 60%;
+    }
+
+    
+
+    #Hero .row {
+        padding-bottom: 75px;
+    }
+
+    .btn-custom1 {
+        width: 80%;
+    }
+
+    #about p {
+        text-align: justify !important; 
+    }
+
+    #oneofprojects h1 {
+        font-size: 2rem;
+    }
+
+    #sertifikat img {
+        width: 40%;
+    }
+
+
+}
+
+@media screen and ( max-width : 576px ) {
+    hr {
+        width: 75% !important;
+    }
+
+    Footer p {
+        font-size: 0.8rem;
+    }
+
+    #sertifikat p {
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+@media screen and ( max-width : 350px ) {
+    
+}

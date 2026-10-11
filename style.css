@@ -1,0 +1,469 @@
+:root {
+    --mainColor : #252734;
+    --secondarColor : #212121;
+    --acsentColor : #FF9100;
+}
+/* 900px min height */
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+}
+section h1 {
+    color: #FFFF;
+    font-size: 2.5rem;
+
+}
+
+/* Navbar */
+
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+#nav {
+    background-color: transparent;
+    z-index: 10;
+    transition: background-color 0.5s ease;
+}
+
+.nav-dark {
+    background-color: var(--secondarColor) !important;
+}
+
+/* End Navbar */
+
+/* Hero */
+
+.color-acsent {
+    color: var(--acsentColor);
+}
+
+#Hero {
+    color: #FFFF;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+#Hero h1 {
+    font-size: 3rem;
+}
+#Hero h2 {
+    font-size: 1.5rem;
+}
+#Hero p {
+    font-size: 1.1rem;
+}
+
+/* CTA */
+
+.btn-custom1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #FFFF;
+    min-width: 200px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    padding: 0.12px;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
+}
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+}
+
+.cv {
+    color: #FFFF;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.social-icon svg {
+    margin-right: 0.9em;
+    margin-bottom: 10px;
+}
+/* End CTA */
+
+@media (min-width : 922px) {
+    #Hero .row {
+        padding-top: 76px;
+    }
+}
+.profile-caption {
+    clear: both;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* End Hero */
+
+/* About */
+
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+    margin-bottom: 10px;
+}
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondarColor);
+    color: #FFFF;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 8px;
+}
+#about p {
+    margin-bottom: 70px;
+}
+/* End about me */
+
+/* One of projects */
+
+#oneofprojects {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#oneofprojects hr {
+    width: 35%;
+    height: 2px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+    margin-bottom: 10px;
+}
+#oneofprojects p {
+    color: #FFFF;
+    margin-bottom: 5px;
+}
+#oneofprojects p1 {
+    color: #FFFF;
+    padding-bottom: 80px;
+}
+#oneofprojects img {
+    padding-top: 20px;
+}
+/* End one of projects */
+
+/* more tools */
+
+#more hr {
+    width: 35%;
+    height: 2px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+    margin-bottom: 10px;
+}
+
+#more {
+    min-height: 600px;
+    width: 100%;
+    color: #FFFF;
+}
+
+#more img {
+    width: 12%;
+    margin: 10px;
+}
+/* end more tools */
+
+/* animasi more tools */
+#more img {
+    display: inline-block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+#more img:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* sertifikat */
+
+#sertifikat {
+    margin-top: -100px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: var(--secondarColor);
+}
+
+#sertifikat p, a {
+    color: #FFFF !important;
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 10px;
+}
+/* end sertifikat */
+
+.social-icon-icon svg {
+    margin-bottom: 10px;
+    margin-right: 0.5em;
+}
+
+
+/* Social Media Icons */
+#Hero .social-icon {
+    position: static;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#Hero .social-icon svg {
+    margin-right: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Responsive: HP */
+@media screen and (max-width: 576px) {
+    #Hero .social-icon {
+        text-align: center;
+    }
+}
+
+/* Navbar Animation */
+/* dasar */
+#nav .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: #FFFF;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+/* Warna home aktif */
+#nav .navbar-nav .nav-link.active {
+    color: var(--acsentColor) !important;
+}
+/* garis bawah animasi */
+#nav .navbar-nav .nav-link.after {
+    content:"";
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--acsentColor);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+/* garis bawah home awal */
+#nav .navbar-nav .nav-link.active::after {
+    width: 70%;
+}
+/* efek kursor aktif */
+#nav .navbar-nav .nav-link:hover {
+    color: var(--acsentColor) !important;
+    transform: translateY(-2px);
+}
+/* garis melebar saat di klik */
+#nav .navbar-nav .nav-link:hover::after {
+    width: 70%;
+}
+/* fokus keyboard */
+#nav .navbar-nav .nav-link:focus-visible {
+    outline: 2px solid var(--acsentColor);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+/* responsive navbar animation */
+@media screen and (max-width : 991px) {
+    #nav .navbar-nav .nav-link {
+        width: fit-content;
+    }
+    #nav .navbar-nav .nav-link::after {
+        bottom: 0;
+    }
+    #nav .navbar-nav .nav-link.active::after {
+        width: 70%;
+    }
+}
+/* animation lets collaborate */
+.btn-custom1 {
+    transition: 
+    transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+/* gerakan if kursor come */
+.btn-custom1:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 145, 0, 0.35);
+}
+/* animasi klik */
+.btn-custom1:active {
+    transform: translateY(0.5px) scale(0.88);
+    filter: none;
+}
+/* animasi enjoy hp*/
+@media (prefers-reduced-motion: reduce) {
+    .btn-custom1 {
+        transition: none;
+    }
+    
+}
+/* animasi profil photo */
+.hero-img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+.hero-img:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* animasi icon medsos */
+.social-icon a:not(.cv), .social-icon-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+/* efek kursor */
+.social-icon a:not(.cv):hover, .social-icon-icon a:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 5px 8px rgba(255, 145, 0, 0.4));
+}
+/* efek klik */
+.social-icon a:not(.cv):active, .social-icon-icon a:active {
+    transform: translateY(0.5px) scale(0.88);
+    filter: none;
+}
+/* efek fokus */
+.social-icon a:not(.cv):focus-visible, .social-icon-icon a:focus-visible {
+    outline: 2px solid var(--acsentColor);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+/* animasi terompet footer */
+#celebration-trigger {
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.25s ease;
+}
+#celebration_trigger:hover {
+    color: var(--acsentColor);
+}
+/* lapisan animasi */
+#party-celebration {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+/* terompet kedua sisi bawah */
+.party-cannon {
+    position: absolute;
+    bottom: 12px;
+    font-size: clamp(42px, 6vw, 75px);
+    opacity: 0;
+    transform: scale(0.4);
+}
+.party-cannon.left {
+    left: 12px;
+}
+.party-cannon.right {
+    right: 12px;
+}
+.party-cannon.fire {
+    animation: cannon-fire 0.65s ease-out forwards;
+}
+@keyframes cannon-fire {
+    0% {
+        opacity: 0;
+        transform: scale(0.4) rotate(0deg);
+    }
+    45% {
+        opacity: 1;
+        transform: scale(1.2) rotate(-12deg);
+    }
+    70% {
+        transform: scale(0.95) rotate(8deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* pita confetti */
+.party-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 17px;
+    border-radius: 2px;
+    opacity: 0;
+    animation: ribbon-burst var(--duration) cubic-bezier(.12,.65,.25,1) forwards;
+    will-change: transform, opacity;
+}
+@keyframes ribbon-burst {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(0.7);
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--move-x), var(--move-y)) rotate(var(--spin)) scale(1);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .party-cannon.fire,
+    .party-ribbon {
+        animation-duration: 0.01ms !important;
+    }
+}
+
+.party-cannon {
+    position: absolute;
+    bottom: 12px;
+    width: 90px;
+    height: 75px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: bottom center;
+}
+
+.party-cannon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.party-cannon.left {
+    left: 12px;
+}
+
+.party-cannon.right {
+    right: 12px;
+}
+
+.party-cannon.right svg {
+    transform: scaleX(-1);
+}
